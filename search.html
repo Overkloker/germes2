@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style/fonts.css">
+    <link rel="stylesheet" type="text/css" href="style/icon.css">
+    <link rel="stylesheet" type="text/css" href="style/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="style/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="style/jquery-ui.theme.min.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+<div class="wrap">
+
+
+<div class="content">
+    <div class="b-header">
+        <div class="e-header-logo-container">
+            <div class="t">
+                <div class="c">
+                    <div class="b-logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="e-header-nav-container">
+            <button class="b-button m-button-close anim js-close-search">
+                                        <span class="t"><span class="c">
+                                            <span class="b-icon">
+                                                <span class="glyphicon glyphicon-remove"></span>
+                                            </span>
+                                        </span></span>
+            </button>
+            <div class="container">
+                <h1 class="e-header-title">ПОИСК: НАЗВАНИЕ ПОИСКОВОГО ЗАПРОСА (16)</h1>
+                <ul class="b-nav-list m-nav-list-search">
+                    <li class="e-nav-item m-nav-item-but-search">
+                        <a href="catalog-photo-hor.html" class="b-button anim">
+                   <span class="e-button-icon-container"><span class="t"><span class="c"><span
+                           class="b-icon"><i class="icon-menu"></i></span></span></span></span>
+                   <span class="e-button-text-container"><span class="t"><span class="c"><span
+                           class="e-button-text">Каталог</span></span></span></span>
+                        </a>
+                    </li>
+                    <li class="e-nav-item">
+                        <a href="share.html" class="b-button anim">
+                   <span class="e-button-icon-container"><span class="t"><span class="c"><span
+                           class="b-icon"><i class="icon-discount"></i></span></span></span></span>
+                   <span class="e-button-text-container"><span class="t"><span class="c"><span
+                           class="e-button-text">Акции и скидки</span></span></span></span>
+                        </a>
+                    </li>
+                    <li class="e-nav-item">
+                        <a href="map" class="b-button anim">
+                   <span class="e-button-icon-container"><span class="t"><span class="c"><span
+                           class="b-icon"><i class="icon-phone-call"></i></span></span></span></span>
+                   <span class="e-button-text-container"><span class="t"><span class="c"><span
+                           class="e-button-text">адреса и контакты</span></span></span></span>
+                        </a>
+                    </li>
+                    <li class="e-nav-item m-nav-item-search">
+                        <div class="b-input-container m-input-container-search">
+                            <input type="text" class="b-input" placeholder="быстрый поиск по названию товара, категории или производителю">
+                            <button class="e-input-search anim">
+                                <span class="b-icon"><i class="icon-search"></i></span>
+                            </button>
+                        </div>
+                        <div class="e-num-item-before"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="b-content m-pad">
+        <div class="container">
+                            <div class="b-filters-container">
+                                <ul class="b-line-buttons">
+                                    <li class="e-line-buttons-item">
+                                        <span class="e-line-button-title">упорядочить:</span>
+                                    </li>
+                                    <li class="e-line-buttons-item">
+                                        <button class="b-button anim active">
+                                            <span class="e-button-text-container"><span class="t"><span class="c"><span class="e-button-text">по названию</span></span></span></span>
+                                        </button>
+                                    </li>
+                                    <li class="e-line-buttons-item">
+                                        <button class="b-button anim">
+                                            <span class="e-button-text-container"><span class="t"><span class="c"><span class="e-button-text">по цене</span></span></span></span>
+                                        </button>
+                                    </li>
+                                    <li class="e-line-buttons-item">
+                                        <button class="b-button anim">
+                                            <span class="e-button-text-container"><span class="t"><span class="c"><span class="e-button-text">по производителю</span></span></span></span>
+                                        </button>
+                                    </li>
+                                    <li class="e-line-buttons-item">
+                                        <button class="b-button m-button-square anim js-filter">
+                                            <span class="e-button-icon-container"><span class="t"><span class="c"><span class="b-icon"><i class="icon-filter"></i></span></span></span></span>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="b-filters">
+                                    <button class="b-button m-button-close anim js-close-filter">
+                                        <span class="t"><span class="c">
+                                            <span class="b-icon">
+                                                <span class="glyphicon glyphicon-remove"></span>
+                                            </span>
+                                        </span></span>
+                                    </button>
+                                    <ul class="b-filters-list">
+                                        <li class="e-filters-item">
+                                            <p class="e-filter-label">Искать в категории:</p>
+                                            <div class="b-select m-select-white m-select-long m-100">
+                                                <div class="e-select-top">
+                                                    <p class="e-select-text anim"></p>
+                                                    <span class="e-select-arrow"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></span>
+                                                </div>
+                                                <ul class="e-select-list">
+                                                    <li class="e-select-item anim ">Хмельницкий</li>
+                                                    <li class="e-select-item anim">Одесса</li>
+                                                    <li class="e-select-item anim">Умань</li>
+                                                    <li class="e-select-item anim">Черкассы</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="e-filters-item">
+                                            <p class="e-filter-label">Название фильтра №3:</p>
+                                            <div class="b-select m-select-white m-select-long m-100">
+                                                <div class="e-select-top">
+                                                    <p class="e-select-text anim"></p>
+                                                    <span class="e-select-arrow"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></span>
+                                                </div>
+                                                <ul class="e-select-list">
+                                                    <li class="e-select-item anim ">Хмельницкий</li>
+                                                    <li class="e-select-item anim">Одесса</li>
+                                                    <li class="e-select-item anim">Умань</li>
+                                                    <li class="e-select-item anim active">Черкассы</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="e-filters-item">
+                                            <p class="e-filter-label">Название фильтра №6:</p>
+                                            <div class="b-select m-select-white m-select-long m-100">
+                                                <div class="e-select-top">
+                                                    <p class="e-select-text anim"></p>
+                                                    <span class="e-select-arrow"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></span>
+                                                </div>
+                                                <ul class="e-select-list">
+                                                    <li class="e-select-item anim ">Хмельницкий</li>
+                                                    <li class="e-select-item anim active">Одесса</li>
+                                                    <li class="e-select-item anim">Умань</li>
+                                                    <li class="e-select-item anim">Черкассы</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="e-filters-item">
+                                            <p class="e-filter-label">Название фильтра №1:</p>
+                                            <div class="b-slider-count">
+                                                <div class="e-slider-count-line"></div>
+                                                <div class="e-slider-count-input-container">
+                                                    <div class="e-slider-count-left">
+                                                        <input type="text" class="b-input js-s" readonly>
+                                                    </div>
+                                                    <div class="e-slider-count-right">
+                                                        <input type="text" class="b-input js-f" readonly>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="e-filters-item">
+                                            <p class="e-filter-label">Название фильтра №3:</p>
+                                            <div class="b-select m-select-white m-select-long m-100">
+                                                <div class="e-select-top">
+                                                    <p class="e-select-text anim"></p>
+                                                    <span class="e-select-arrow"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></span>
+                                                </div>
+                                                <ul class="e-select-list">
+                                                    <li class="e-select-item anim ">Хмельницкий</li>
+                                                    <li class="e-select-item anim">Одесса</li>
+                                                    <li class="e-select-item anim">Умань</li>
+                                                    <li class="e-select-item anim active">Черкассы</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="e-filters-item">
+                                            <p class="e-filter-label">Название фильтра №6:</p>
+                                            <div class="b-select m-select-white m-select-long m-100">
+                                                <div class="e-select-top">
+                                                    <p class="e-select-text anim"></p>
+                                                    <span class="e-select-arrow"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></span>
+                                                </div>
+                                                <ul class="e-select-list">
+                                                    <li class="e-select-item anim ">Хмельницкий</li>
+                                                    <li class="e-select-item anim active">Одесса</li>
+                                                    <li class="e-select-item anim">Умань</li>
+                                                    <li class="e-select-item anim">Черкассы</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="e-filters-item">
+                                            <p class="e-filter-label">Искать в категории:</p>
+                                            <div class="b-select m-select-white m-select-long m-100">
+                                                <div class="e-select-top">
+                                                    <p class="e-select-text anim"></p>
+                                                    <span class="e-select-arrow"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></span>
+                                                </div>
+                                                <ul class="e-select-list">
+                                                    <li class="e-select-item anim ">Хмельницкий</li>
+                                                    <li class="e-select-item anim">Одесса</li>
+                                                    <li class="e-select-item anim">Умань</li>
+                                                    <li class="e-select-item anim">Черкассы</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="e-filters-item">
+                                            <p class="e-filter-label">Название фильтра №3:</p>
+                                            <div class="b-select m-select-white m-select-long m-100">
+                                                <div class="e-select-top">
+                                                    <p class="e-select-text anim"></p>
+                                                    <span class="e-select-arrow"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></span>
+                                                </div>
+                                                <ul class="e-select-list">
+                                                    <li class="e-select-item anim ">Хмельницкий</li>
+                                                    <li class="e-select-item anim">Одесса</li>
+                                                    <li class="e-select-item anim">Умань</li>
+                                                    <li class="e-select-item anim active">Черкассы</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="e-filters-item">
+                                            <p class="e-filter-label">Название фильтра №6:</p>
+                                            <div class="b-select m-select-white m-select-long m-100">
+                                                <div class="e-select-top">
+                                                    <p class="e-select-text anim"></p>
+                                                    <span class="e-select-arrow"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></span>
+                                                </div>
+                                                <ul class="e-select-list">
+                                                    <li class="e-select-item anim ">Хмельницкий</li>
+                                                    <li class="e-select-item anim active">Одесса</li>
+                                                    <li class="e-select-item anim">Умань</li>
+                                                    <li class="e-select-item anim">Черкассы</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="e-filters-footer">
+                                        <button class="b-button anim js-close-filter">
+                                            <span class="e-button-text-container"><span class="t"><span class="c"><span class="e-button-text">фильтровать</span></span></span></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="b-square-list m-square-list-hor m-pad-st-top row">
+                                    <div class="e-square-item col-lg-12">
+                                        <div class="b-square-catalog m-square-catalog-horizontal">
+                                            <div class="e-square-catalog-photo" style="background-image: url('img/gav.jpg')">
+                                                <div class="b-bubble m-bubble-best m-bubble-best-back">
+                                                    <div class="t">
+                                                        <div class="c">
+                                                            <span class="e-bubble-text">лучшая цена</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="e-square-catalog-right">
+                                                <div class="b-card-short-info">
+                                                    <div class="e-card-short-left">
+                                                        <p class="e-card-title">Наименование товара</p>
+                                                        <p class="e-card-desc">Название категории</p>
+                                                        <p class="e-card-desc">ООО "Рога и Копыта",</p>
+                                                        <p class="e-card-desc">Германия</p>
+                                                    </div>
+                                                    <div class="e-card-short-right m-card-right-stock">
+                                                        <div class="e-card-short-price-container">
+                                                            <div class="t">
+                                                                <div class="c">
+                                                                    <p class="e-card-short-price">500 грн.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="e-card-short-text-attention">В наличии</p>
+                                                        <div class="e-square-catalog-footer">
+                                                            <div class="b-product-buttons-list">
+                                                                <div class="e-product-buttons-item">
+                                                                    <a href="#" class="b-button m-100 anim">
+                                                                        <span class="e-button-text-container"><span class="t"><span class="c"><span class="e-button-text">в корзину</span></span></span></span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="e-product-buttons-item">
+                                                                    <a href="#" class="b-button m-button-blue m-100 anim">
+                                                                        <span class="e-button-text-container"><span class="t"><span class="c"><span class="e-button-text">продробнее</span></span></span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-square-item col-lg-12">
+                                        <div class="b-square-catalog m-square-catalog-horizontal">
+                                            <div class="e-square-catalog-photo" style="background-image: url('img/gav.jpg')">
+
+                                            </div>
+                                            <div class="e-square-catalog-right">
+                                                <div class="b-card-short-info">
+                                                    <div class="e-card-short-left">
+                                                        <p class="e-card-title">Наименование товара</p>
+                                                        <p class="e-card-desc">Название категории</p>
+                                                        <p class="e-card-desc">ООО "Рога и Копыта",</p>
+                                                        <p class="e-card-desc">Германия</p>
+                                                    </div>
+                                                    <div class="e-card-short-right m-card-right-stock">
+                                                        <div class="e-card-short-price-container">
+                                                            <div class="t">
+                                                                <div class="c">
+                                                                    <p class="e-card-short-price">500 грн.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="e-card-short-text-attention">В наличии</p>
+                                                        <div class="e-square-catalog-footer">
+                                                            <div class="b-product-buttons-list">
+                                                                <div class="e-product-buttons-item">
+                                                                    <a href="#" class="b-button m-100 anim">
+                                                                        <span class="e-button-text-container"><span class="t"><span class="c"><span class="e-button-text">в корзину</span></span></span></span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="e-product-buttons-item">
+                                                                    <a href="#" class="b-button m-button-blue m-100 anim">
+                                                                        <span class="e-button-text-container"><span class="t"><span class="c"><span class="e-button-text">продробнее</span></span></span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-square-item col-lg-12">
+                                        <div class="b-square-catalog m-square-catalog-horizontal">
+                                            <div class="e-square-catalog-photo" style="background-image: url('img/gav.jpg')">
+                                                <div class="b-bubble m-bubble-best m-bubble-best-back">
+                                                    <div class="t">
+                                                        <div class="c">
+                                                            <span class="e-bubble-text">лучшая цена</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="e-square-catalog-right">
+                                                <div class="b-card-short-info">
+                                                    <div class="e-card-short-left">
+                                                        <p class="e-card-title">Наименование товара</p>
+                                                        <p class="e-card-desc">Название категории</p>
+                                                        <p class="e-card-desc">ООО "Рога и Копыта",</p>
+                                                        <p class="e-card-desc">Германия</p>
+                                                    </div>
+                                                    <div class="e-card-short-right m-card-right-stock">
+                                                        <div class="e-card-short-price-container">
+                                                            <div class="t">
+                                                                <div class="c">
+                                                                    <p class="e-card-short-price">500 грн.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="e-card-short-text-attention">В наличии</p>
+                                                        <div class="e-square-catalog-footer">
+                                                            <div class="b-product-buttons-list">
+                                                                <div class="e-product-buttons-item">
+                                                                    <a href="#" class="b-button m-100 anim">
+                                                                        <span class="e-button-text-container"><span class="t"><span class="c"><span class="e-button-text">в корзину</span></span></span></span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="e-product-buttons-item">
+                                                                    <a href="#" class="b-button m-button-blue m-100 anim">
+                                                                        <span class="e-button-text-container"><span class="t"><span class="c"><span class="e-button-text">продробнее</span></span></span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-square-item col-lg-12">
+                                        <div class="b-square-catalog m-square-catalog-horizontal">
+                                            <div class="e-square-catalog-photo" style="background-image: url('img/gav.jpg')">
+                                                <div class="b-bubble m-bubble-best m-bubble-best-back">
+                                                    <div class="t">
+                                                        <div class="c">
+                                                            <span class="e-bubble-text">лучшая цена</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="e-square-catalog-right">
+                                                <div class="b-card-short-info">
+                                                    <div class="e-card-short-left">
+                                                        <p class="e-card-title">Наименование товара</p>
+                                                        <p class="e-card-desc">Название категории</p>
+                                                        <p class="e-card-desc">ООО "Рога и Копыта",</p>
+                                                        <p class="e-card-desc">Германия</p>
+                                                    </div>
+                                                    <div class="e-card-short-right m-card-right-stock">
+                                                        <div class="e-card-short-price-container">
+                                                            <div class="t">
+                                                                <div class="c">
+                                                                    <p class="e-card-short-price">500 грн.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="e-card-short-text-attention">В наличии</p>
+                                                        <div class="e-square-catalog-footer">
+                                                            <div class="b-product-buttons-list">
+                                                                <div class="e-product-buttons-item">
+                                                                    <a href="#" class="b-button m-100 anim">
+                                                                        <span class="e-button-text-container"><span class="t"><span class="c"><span class="e-button-text">в корзину</span></span></span></span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="e-product-buttons-item">
+                                                                    <a href="#" class="b-button m-button-blue m-100 anim">
+                                                                        <span class="e-button-text-container"><span class="t"><span class="c"><span class="e-button-text">продробнее</span></span></span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        <div class="b-control-panel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <a href="#" class="b-button m-button-arr m-button-h anim m-100 js-swipe-prev">
+                                            <span class="e-button-text-container"><span class="t"><span class="c">
+                                                <p class="e-button-text">Предыдущая страница (1)</p>
+                                            </span></span></span>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+
+                    </div>
+                    <div class="col-lg-3">
+                        <a href="#" class="b-button m-button-arr m-button-h m-arr-next anim m-100 js-swipe-next">
+                                            <span class="e-button-text-container"><span class="t"><span class="c">
+                                                <p class="e-button-text">Следующая страница</p>
+                                            </span></span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="b-footer">
+    <div class="container">
+        <div class="row">
+            <div class="e-footer-part col-lg-9">
+                <div class="t">
+                    <div class="c">
+                        <a href="#" class="b-cart-footer">
+                            <div class="t">
+                                <div class="c">
+                                <span class="e-cart-count"><span class="e-cart-icon"><i class="icon-cart"></i></span><span
+                                        class="e-cart-count-text">(16 товаров)</span></span>
+                                    <span class="e-cart-cost">12 980<span class="e-cart-currency">грн</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="e-footer-part col-lg-3">
+                <div class="t">
+                    <div class="c">
+                        <a href="#" class="b-button anim m-100">
+                   <span class="e-button-text-container"><span class="t"><span class="c"><span
+                           class="e-button-text">оформить заказ</span></span></span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="js/jquery-2.2.3.min.js"></script>
+
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/global.js"></script>
+</body>
+</html>
