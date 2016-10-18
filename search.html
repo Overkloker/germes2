@@ -255,7 +255,7 @@
                                 </div>
                             </div>
                                 <div class="b-square-list m-square-list-hor m-pad-st-top row">
-                                    <div class="e-square-item col-lg-12">
+                                    <div class="e-square-item col-lg-12" data-id-goods="1">
                                         <div class="b-square-catalog m-square-catalog-horizontal">
                                             <div class="e-square-catalog-photo" style="background-image: url('img/gav.jpg')">
                                                 <div class="b-bubble m-bubble-best m-bubble-best-back">
@@ -286,7 +286,7 @@
                                                         <div class="e-square-catalog-footer">
                                                             <div class="b-product-buttons-list">
                                                                 <div class="e-product-buttons-item">
-                                                                    <a href="#" class="b-button m-100 anim">
+                                                                    <a href="#" class="b-button m-100 anim btn-in-basket">
                                                                         <span class="e-button-text-container"><span class="t"><span class="c"><span class="e-button-text">в корзину</span></span></span></span>
                                                                     </a>
                                                                 </div>
@@ -302,7 +302,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="e-square-item col-lg-12">
+                                    <div class="e-square-item col-lg-12" data-id-goods="2">
                                         <div class="b-square-catalog m-square-catalog-horizontal">
                                             <div class="e-square-catalog-photo" style="background-image: url('img/gav.jpg')">
 
@@ -327,7 +327,7 @@
                                                         <div class="e-square-catalog-footer">
                                                             <div class="b-product-buttons-list">
                                                                 <div class="e-product-buttons-item">
-                                                                    <a href="#" class="b-button m-100 anim">
+                                                                    <a href="#" class="b-button m-100 anim btn-in-basket">
                                                                         <span class="e-button-text-container"><span class="t"><span class="c"><span class="e-button-text">в корзину</span></span></span></span>
                                                                     </a>
                                                                 </div>
@@ -343,7 +343,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="e-square-item col-lg-12">
+                                    <div class="e-square-item col-lg-12" data-id-goods="3">
                                         <div class="b-square-catalog m-square-catalog-horizontal">
                                             <div class="e-square-catalog-photo" style="background-image: url('img/gav.jpg')">
                                                 <div class="b-bubble m-bubble-best m-bubble-best-back">
@@ -374,7 +374,7 @@
                                                         <div class="e-square-catalog-footer">
                                                             <div class="b-product-buttons-list">
                                                                 <div class="e-product-buttons-item">
-                                                                    <a href="#" class="b-button m-100 anim">
+                                                                    <a href="#" class="b-button m-100 anim btn-in-basket">
                                                                         <span class="e-button-text-container"><span class="t"><span class="c"><span class="e-button-text">в корзину</span></span></span></span>
                                                                     </a>
                                                                 </div>
@@ -390,7 +390,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="e-square-item col-lg-12">
+                                    <div class="e-square-item col-lg-12" data-id-goods="4">
                                         <div class="b-square-catalog m-square-catalog-horizontal">
                                             <div class="e-square-catalog-photo" style="background-image: url('img/gav.jpg')">
                                                 <div class="b-bubble m-bubble-best m-bubble-best-back">
@@ -421,7 +421,7 @@
                                                         <div class="e-square-catalog-footer">
                                                             <div class="b-product-buttons-list">
                                                                 <div class="e-product-buttons-item">
-                                                                    <a href="#" class="b-button m-100 anim">
+                                                                    <a href="#" class="b-button m-100 anim btn-in-basket">
                                                                         <span class="e-button-text-container"><span class="t"><span class="c"><span class="e-button-text">в корзину</span></span></span></span>
                                                                     </a>
                                                                 </div>
@@ -474,8 +474,8 @@
                             <div class="t">
                                 <div class="c">
                                 <span class="e-cart-count"><span class="e-cart-icon"><i class="icon-cart"></i></span><span
-                                        class="e-cart-count-text">(16 товаров)</span></span>
-                                    <span class="e-cart-cost">12 980<span class="e-cart-currency">грн</span></span>
+                                        class="e-cart-count-text" id="count-goods"></span></span>
+                                    <span class="e-cart-cost" id="basket-price"><span class="e-cart-currency">грн</span></span>
                                 </div>
                             </div>
                         </a>
@@ -501,5 +501,6 @@
 <script src="js/swiper.jquery.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/global.js"></script>
+<script src="front/front.js"></script>
 </body>
 </html>

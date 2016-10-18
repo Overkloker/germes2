@@ -1,0 +1,18 @@
+[
+  {
+    "id" : 1,
+    "title" : "Наименование товара",
+    "img" : "http://tech21info.com/admin/wp-content/uploads/2013/03/chrome-logo-200x200.png",
+    "price" : 150,
+    "count" : 2,
+    "content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, veniam."
+  },
+  {
+    "id" : 2,
+    "title" : "Title",
+    "img" : "http://tech21info.com/admin/wp-content/uploads/2013/03/chrome-logo-200x200.png",
+    "price" : 200,
+    "count" : 10,
+    "content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, veniam."
+  }
+]
