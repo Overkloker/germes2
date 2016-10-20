@@ -3,7 +3,8 @@ var basket = JSON.parse(localStorage.getItem('basket')) || [];
 
 // если страница поиска то при клике на купить считываем id и price.
 if (location.href.indexOf("search") != -1) {
-  $('.btn-in-basket').click(function () {
+  $('.btn-in-basket').click(function (e) {
+    e.preventDefault();
     var id = $(this).parents('.e-square-item').attr('data-id-goods');
     var price = $(this).parents('.e-square-item').find('.e-card-short-price').text();
 
@@ -26,6 +27,15 @@ if (location.href.indexOf("search") != -1) {
         price: price,
         count: 1
       });
+    } else {
+      basket.forEach(function (item, i) {
+        if (item.id == id) {
+          basket[i].count += 1;
+          var basketData = JSON.stringify(basket);
+          localStorage.setItem('basket', basketData);
+          basketCalc();
+        }
+      });
     }
 
 
@@ -39,7 +49,8 @@ if (location.href.indexOf("search") != -1) {
 
 // если мы на странице товара
 if (location.href.indexOf("card") != -1) {
-  $('.btn-in-basket').click(function () {
+  $('.btn-in-basket').click(function (e) {
+    e.preventDefault();
     var id = $(this).parents('.b-card-short-info').attr('data-id-goods');
     var price = $(this).parents('.b-card-short-info').find('.e-card-short-price').text();
 
@@ -63,7 +74,7 @@ if (location.href.indexOf("card") != -1) {
 var basketCalc = function () {
   var total = 0;
   basket.forEach(function (item) {
-    total += parseInt(item.price.match(/\d*/)[0], 10)
+    total += parseInt(((item.price.match(/\d*/)[0]) * item.count), 10)
   });
 
   // динамическое обновления цены в корзине
